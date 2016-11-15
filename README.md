@@ -21,7 +21,7 @@ The project has 3 files:
 
 On the Android side this is what you'll need:
 
-* QPython [[http://qpython.com/]] to be able to run Python scripts on your Android phone
+* [QPython](http://qpython.com) to be able to run Python scripts on your Android phone
 * websockets Python library: note that you should install websocket_client (not just websocket)
 * androidhelper to be able to access your Android sensors from Python
 
