@@ -11,7 +11,7 @@ This is achieved via websockets:
 
 The project has 3 files:
 
-* server.py: this is the process running on the Raspberry Pi. It creates a websocket and listens to it for incoming messages. When receiving one, it tries to decode it as a JSON message (since most of the messages coming from Android will be in JSON format) and prints out the result. It also echoes back the received message to the sender, though this is just for debugging purposes and could be removed. 
+* raspi_server.py: this is the process running on the Raspberry Pi. It creates a websocket and listens to it for incoming messages. When receiving one, it tries to decode it as a JSON message (since most of the messages coming from Android will be in JSON format) and prints out the result. It also echoes back the received message to the sender, though this is just for debugging purposes and could be removed. 
 
 * simple_client.py: This is just an example of how to send a message via websockets. It creates the connection, sends a message and then waits for an answer from the other side. You can run this process on any machine. You should change the IP of the websocket (e.g. ws://192.168.1.12:8082) to match the IP address of the machine running server.py.
 
