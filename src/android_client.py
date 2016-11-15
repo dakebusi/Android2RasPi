@@ -8,7 +8,7 @@ from time import sleep
 
 droid = androidhelper.Android()
 
-ws = create_connection("ws://192.168.1.12:8080/websocket")
+ws = create_connection("ws://192.168.1.12:8082/websocket")
 for i in range(5):
     print "Sending position..."
     pos = droid.getLastKnownLocation()
