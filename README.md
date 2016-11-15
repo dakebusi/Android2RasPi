@@ -16,3 +16,15 @@ The project has 3 files:
 * simple_client.py: This is just an example of how to send a message via websockets. It creates the connection, sends a message and then waits for an answer from the other side. You can run this process on any machine. You should change the IP of the websocket (e.g. ws://192.168.1.12:8082) to match the IP address of the machine running server.py.
 
 * android_client.py: This is the process running on the Android phone. It creates the websocket connection as in simple_client.py, and then it sends 5 times (with some delay in between) the last known location (using AndroidHelper) of the phone.
+
+## Requisites
+
+On the Android side this is what you'll need:
+
+* QPython [[http://qpython.com/]] to be able to run Python scripts on your Android phone
+* websockets Python library: note that you should install websocket_client (not just websocket)
+* androidhelper to be able to access your Android sensors from Python
+
+On the Raspberry Pi side you'll need:
+
+* websockets library
